@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olive\\ProgAD\\Assignment1\\Assignment1.fsproj",
+      "projectUniqueName": "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1\\Assignment1.fsproj",
       "projectName": "Assignment1",
-      "projectPath": "C:\\Users\\olive\\ProgAD\\Assignment1\\Assignment1.fsproj",
+      "projectPath": "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1\\Assignment1.fsproj",
       "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\olive\\ProgAD\\Assignment1\\obj\\",
+      "outputPath": "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -102,36 +102,45 @@ let rec fmt ae =
   | Sub (ae1, ae2) -> fmt ae1 + "-" + fmt ae2
 
 
-(*let rec aEval ae = 
-  match ae with
-  | CstI i -> i
-  | Var x -> x
-  *)
+
 
 let rec simplify ae =
   match ae with
   | Add (ae1, ae2) -> 
-      let i1 = fmt ae1 
-      let i2 = fmt ae2
-      if i1 = "0" then i2 else ae
-      if i2 = "0" then i1 else ae
-  | Sub (ae1, ae2) ->
-      let i1 = fmt ae1 
-      let i2 = fmt ae2
+      let i1 = ae1 
+      let i2 = ae2
       match i1 with
-        | "0" -> "-" + i2
-        | i2 -> "0"
+      | CstI 0 -> i2
+      | _ -> match i2 with
+              | CstI 0 -> i1
+              | _ -> ae 
+  | Sub (ae1, ae2) ->
+      let i1 = ae1 
+      let i2 = ae2
+      match i1 with
+        | i2 when i1=i2 -> CstI 0
         | _ -> match i2 with
-                | "0" -> i1
+                | CstI 0 -> i1
                 | _ -> ae   
   | Mul (ae1, ae2) ->
-      let i1 = fmt ae1 
-      let i2 = fmt ae2
+      let i1 = ae1 
+      let i2 = ae2
       match i1 with 
-        | "1" -> i2
-        | "0" -> "0"
+        | CstI 1 -> i2
+        | CstI 0 -> CstI 0
         | _ -> match i2 with
-                | "1" -> i1
-                | "0" -> "0"
+                | CstI 1 -> i1
+                | CstI 0 -> CstI 0
                 | _ -> ae
   | _ -> failwith "cannot simplify further"
+
+
+let rec symbdiff e s  =
+    match e with
+    | CstI i -> CstI 0
+    | Var x when x = s -> CstI 1
+    | Var x -> CstI 0
+    | Add(ae1, ae2) -> Add (symbdiff ae1 s, symbdiff ae2 s)
+    | Mul (ae1, ae2) -> Add(Mul ((symbdiff ae1 s), ae2),Mul ((symbdiff ae2 s), ae1))
+    | Sub (ae1, ae2) -> Sub (symbdiff ae1 s, symbdiff ae2 s)
+
