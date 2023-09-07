@@ -1,0 +1,4 @@
+C:\Users\olive\ProgAD\Assignment1\obj\Debug\net7.0\Assignment1.fsproj.AssemblyReference.cache
+C:\Users\olive\ProgAD\Assignment1\obj\Debug\net7.0\Assignment1.AssemblyInfoInputs.cache
+C:\Users\olive\ProgAD\Assignment1\obj\Debug\net7.0\Assignment1.AssemblyInfo.fs
+C:\Users\olive\ProgAD\Assignment1\obj\Debug\net7.0\Assignment1.fsproj.CoreCompileInputs.cache
