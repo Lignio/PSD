@@ -41,6 +41,8 @@ let e6 = Prim("==", CstI 4, CstI 4);;
 
 (* Evaluation within an environment *)
 
+//Changed eval function
+
 let rec eval e (env : (string * int) list) : int =
     match e with
     | CstI i            -> i
@@ -79,7 +81,6 @@ let e5v = eval e5 env
 let e6v = eval e6 env
 
 
-
 type aexpr = 
   | CstI of int
   | Var of string
@@ -93,6 +94,8 @@ type aexpr =
 // Mul(CstI 2, Sub(Var "v", Add(Var "w", Var "z"))
 // Add(Add(Var "z", Var "v", Add(Var "x", Var "y"))
 
+//added fmt function
+
 let rec fmt ae = 
   match ae with
   | CstI i -> (string) i
@@ -102,7 +105,7 @@ let rec fmt ae =
   | Sub (ae1, ae2) -> fmt ae1 + "-" + fmt ae2
 
 
-
+//added simplify function
 
 let rec simplify ae =
   match ae with
@@ -134,6 +137,8 @@ let rec simplify ae =
                 | _ -> ae
   | _ -> failwith "cannot simplify further"
 
+
+//Added function symbdiff
 
 let rec symbdiff e s  =
     match e with
