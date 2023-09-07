@@ -1,6 +1,6 @@
-﻿/*using System;
+﻿
 
-abstract class Expr { 
+/*abstract class Expr { 
   abstract public int Eval(Dictionary<String,int> env);
   abstract public String Fmt();
   abstract public String Fmt2(Dictionary<String,int> env);
@@ -98,65 +98,22 @@ public class SimpleExpr {
   }
 }*/
 
-abstract class Expr {
-    abstract public int Eval(Dictionary<String,int> env);
-    abstract public String Fmt();
-}
 
-class CstI : Expr {
-    protected int i;
 
-    public CstI(int i) { 
-    this.i = i; 
-    }
+    Expr e = new Add(new CstI(17), new Var("z"));
+    Expr f = new Sub(new CstI(17), new Var("z"));
+    Expr g = new Mul(new CstI(17), new Var("z"));
+    Expr h = new Add(new Mul(new CstI(17), new Var("z")), new Sub(new CstI(17), new Var("z")));
+    Dictionary<String, int> d = new Dictionary<String, int>();
+    d.Add("z", 3);
     
-    public override int Eval(Dictionary<string, int> env)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override string Fmt()
-    {
-        throw new NotImplementedException();
-    }
-}
-
-class Var : Expr
-{
-    public override int Eval(Dictionary<string, int> env)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override string Fmt()
-    {
-        throw new NotImplementedException();
-    }
-}
+    Console.WriteLine(e.Fmt());
+    Console.WriteLine(f.Fmt());
+    Console.WriteLine(g.Fmt());
+    Console.WriteLine(h.Fmt());
+    Console.WriteLine(h.Eval(d));
 
 
 
 
 
-
-
-
-
-public abstract class Binop : Expr{
-
-}
-
-public class Add : Binop{
-
-  
-}
-
-public class Sub : Binop{
-
-  
-}
-
-public class Mul : Binop{
-
-  
-}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj": {}
+    "C:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj": {}
   },
   "projects": {
-    "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj": {
+    "C:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj",
+        "projectUniqueName": "C:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj",
         "projectName": "Assignment1cs",
-        "projectPath": "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj",
+        "projectPath": "C:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\Assignment1cs.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\obj\\",
+        "outputPath": "C:\\Users\\olive\\ProgAD\\PSD\\Assignment1cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",

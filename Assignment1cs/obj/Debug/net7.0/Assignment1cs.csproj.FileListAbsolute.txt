@@ -1,0 +1,15 @@
+C:\Users\olive\ProgAD\PSD\Assignment1cs\bin\Debug\net7.0\Assignment1cs.exe
+C:\Users\olive\ProgAD\PSD\Assignment1cs\bin\Debug\net7.0\Assignment1cs.deps.json
+C:\Users\olive\ProgAD\PSD\Assignment1cs\bin\Debug\net7.0\Assignment1cs.runtimeconfig.json
+C:\Users\olive\ProgAD\PSD\Assignment1cs\bin\Debug\net7.0\Assignment1cs.dll
+C:\Users\olive\ProgAD\PSD\Assignment1cs\bin\Debug\net7.0\Assignment1cs.pdb
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.csproj.AssemblyReference.cache
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.AssemblyInfoInputs.cache
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.AssemblyInfo.cs
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.csproj.CoreCompileInputs.cache
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.dll
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\refint\Assignment1cs.dll
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.pdb
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\Assignment1cs.genruntimeconfig.cache
+C:\Users\olive\ProgAD\PSD\Assignment1cs\obj\Debug\net7.0\ref\Assignment1cs.dll
